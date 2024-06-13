@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="/css/estilos.css" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="interior">
+			<a href="#" class="logo" target="blank"><img
+				src="/images/logo-fi.png" alt="Logo"></a>
+			<nav class="navegacion">
+				<ul>
+					<li><a href="/inicio">Inicio</a></li>
+					<li><a href="#" target="blank">Acerca de</a></li>
+					<li><a href="/contacto" target="blank">Contacto</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+	<div class="container">
+		<form action="" method="post">
+			<h2>Registracion</h2>
+
+			<div class="content">
+				<div class="inpt-box">
+					<label for="nambres">Nombres</label> <input type="text"
+						placeholder="Ingrese sus nombres" name="nambres"
+						required="required">
+				</div>
+
+				<div class="inpt-box">
+					<label for="apellidos">Apellidos</label> <input type="text"
+						placeholder="Ingrese sus apellidos" name="apellidos"
+						required="required">
+				</div>
+
+				<div class="inpt-box">
+					<label for="dni">DNI</label> <input type="number"
+						placeholder="Ingrese su DNI" name="dni" required="required">
+				</div>
+
+				<div class="inpt-box">
+					<label for="fechaNac">Fecha de Nacimiento</label> <input
+						type="date" placeholder="Ingrese su fecha de nacimiento"
+						name="fechaNac" required="required">
+				</div>
+
+				<div>
+					<span class="tituloGenero">Genero</span>
+					<div class="cat-genero">
+						<input type="radio" name="genero" id="masculino"> <label
+							for="masculino">Masculino</label> <input type="radio"
+							name="genero" id="femenino"> <label for="femenino">Femenino</label>
+
+						<input type="radio" name="genero" id="otros"> <label
+							for="otros">Otro</label>
+
+					</div>
+				</div>
+
+				<div class="inpt-box">
+					<label for="email">Correo Electronico</label> <input type="email"
+						placeholder="Ingrese su correo electronico" name="email"
+						required="required">
+				</div>
+
+				<div class="inpt-box">
+					<label for="telefono">Nro de Telefono</label> <input type="tel"
+						placeholder="Ingrese su nro de telefono" name="telefono"
+						required="required">
+				</div>
+
+				<div class="inpt-box">
+					<label for="domicilio">Domicilio</label> <input type="text"
+						placeholder="Ingrese su direccion" name="domicilio"
+						required="required">
+				</div>
+
+				<div class="select-provincia">
+					<span class="tituloProvincia">Provincia</span>
+					<div class="cat-provincia">
+						<select name="provincia" required>
+							<option value="">Seleccionar</option>
+							<option value="BUENOS AIRES">Buenos Aires</option>
+							<option value="CATAMARCA">CABA</option>
+							<option value="CATAMARCA">Catamarca</option>
+							<option value="CHACO">Chaco</option>
+							<option value="CHUBUT">Chubut</option>
+							<option value="CORDOBA">Córdoba</option>
+							<option value="CORREINTES">Corrientes</option>
+							<option value="ENTRE RIOS">Entre Ríos</option>
+							<option value="FORMOSA">Formosa</option>
+							<option value="JUJUY">Jujuy</option>
+							<option value="LA PAMPA">La Pampa</option>
+							<option value="LA RIOJA">La Rioja</option>
+							<option value="MENDOZA">Mendoza</option>
+							<option value="MISIONES">Misiones</option>
+							<option value="NEUQUEN">Neuquén</option>
+							<option value="RIO NEGRO">Río Negro</option>
+							<option value="SALTA">Salta</option>
+							<option value="SAN JUAN">San Juan</option>
+							<option value="SAN LUIS">San Luis</option>
+							<option value="SANTA CRUZ">Santa Cruz</option>
+							<option value="SANTA FE">Santa Fe</option>
+							<option value="SANTIAGO DEL ESTERO">Santiago del Estero</option>
+							<option value="TIERRA DEL FUEGO">Tierra del Fuego</option>
+							<option value="TUCUMAN">Tucuman</option>
+						</select>
+					</div>
+
+				</div>
+
+
+				<div class="inpt-box-interes">
+					<span class="tituloInteres">Categoria de Interes</span>
+					<div class="cat-check">
+						<input type="checkbox" id="libros" name="deportes"> <label
+							for="deportes">Libros</label> <input type="checkbox"
+							id="informatica" name="deportes"> <label for="deportes">Informatica</label><br>
+						<input type="checkbox" id="programacion" name="deportes">
+						<label for="deportes">Programacion</label> <input type="checkbox"
+							id="juegos" name="deportes"> <label for="deportes">Juegos</label><br>
+						<input type="checkbox" id="salud" name="deportes"> <label
+							for="deportes">Salud</label> <input type="checkbox" id="finanzas"
+							name="deportes"> <label for="deportes">Finanzas</label><br>
+
+					</div>
+				</div>
+
+
+				<div>
+					<span class="tituloSugerencia">Sugerencias personales</span>
+					<div class="inpt-box">
+
+						<textarea id="sugerencias" name="sugerencias" rows="5" cols="170"></textarea>
+					</div>
+
+				</div>
+
+				<div class="inpt-box">
+					<label for="password">Contraseña</label> <input type="password"
+						placeholder="Ingrese una contrseña" name="password"
+						required="required">
+				</div>
+
+				<div class="inpt-box">
+					<label for="password-2">Confirme contraseña</label> <input
+						type="password" placeholder="Confirme contrseña" name="password-2"
+						required="required">
+				</div>
+
+				<div class="inpt-box-check-terms">
+
+					<input type="checkbox" id="libros" name="deportes"> <label
+						for="deportes"><a href="#">Acepto los Términos y
+							Condiciones</a> y <a href="#">Politicas de Privacidad</a></label><br> <input
+						type="checkbox" id="libros" name="deportes"> <label
+						for="deportes">Acepto recibir informacion</label>
+				</div>
+
+			</div>
+			<div class="button-container">
+				<button>Registrarse</button>
+			</div>
+		</form>
+
+	</div>
+
+	<footer>
+		<img src="/images/logo-fi.png" alt="" class="logo">
+		<ul class="footer-menu-container">
+			<li class="menu-item">Legales</li>
+			<li class="menu-item">Cookies</li>
+			<li class="menu-item">Privacidad</li>
+			<li class="menu-item">Facebook</li>
+			<li class="menu-item">Correo electronico</li>
+		</ul>
+		<span class="copyright">&copy; 2024, CALopez. Todos los
+			derechos reservados.</span>
+	</footer>
+
+</body>
+</html>

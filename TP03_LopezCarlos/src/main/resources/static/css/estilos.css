@@ -103,12 +103,10 @@ body{
 
 footer{
     width: 100%;
-   
     bottom: 0;
     left: 0;
     padding: 2rem 8%;
     background-color: #0b132b;
-  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,16 +149,13 @@ footer{
 }
 
 /* MAIN*/
-.inicio{
-	
-  
+.inicio{ 
 	max-width: 750x;
 	padding: 28px;
 	margin: 10px 325px  ;
 	border-radius: 10px;
 	overflow: hidden;
 	background: #F8F8FF;
-	
 	box-shadow: 0 15px 20px rgba(0,0,0,0.6)
 }
 
@@ -175,7 +170,6 @@ footer{
 	line-height: 25px;
 	text-indent: 30px;
 	margin: 15px;
-	
 }
 
 .listas{
@@ -197,15 +191,6 @@ display: block;
   margin-right: auto;
   width: 100%;
 }
-/*
-table, td { 
-	border-style: solid; 
-	border-collapse:collapse
-}
-
-td { padding: 5px; 
-background-color: white; 
-}*/
 
 table {
     border-spacing: 0;
@@ -218,15 +203,7 @@ td, th {
     border: 1px solid #ccc;
     padding: 5px;   
 }
-  /*
-tr:nth-child(even) {
-    background-color: #eee;
-}
 
-tbody tr:hover {
-    background-color: aquamarine;
-}
- */
 thead {
     background-color: black;
     color: white;
@@ -252,10 +229,140 @@ ul {
 	
 	list-style-position: inside;
 	line-height: 25px;
-	
 	text-align: justify; 
 	color: #262626;
 	line-height: 25px;
 	text-indent: 30px;
 	margin: 15px;
+}
+
+/* Formulario*/
+.container{
+	max-width: 650px;
+	padding: 28px;
+	margin: 10px 325px  ;
+	border-radius: 10px;
+	overflow: hidden;
+	background: rgb(0, 36, 72);
+	box-shadow: 0 15px 20px rgba(0,0,0,0.6)
+}
+h2{
+	font-size: 26px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	padding-bottom: 8px;
+	border-bottom: 1px solid silver;
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.inpt-box{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	padding-bottom: 15px;
+}
+.inpt-box:nth-child(2n){
+	justify-content: end;
+}
+.inpt-box label, .tituloGenero, .tituloProvincia, .tituloInteres, .tituloSugerencia{
+	width: 95%;
+	color: #fff;
+	font-weight: bold;
+	margin: 5px 0;
+	
+}
+.tituloGenero, .tituloProvincia, .tituloInteres, .tituloSugerencia{
+	font-size: 16px;
+}
+
+.cat-check label{
+	width: 95%;
+	color: #fff;
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+.cat-genero label{
+	padding: 0 20px 0 5px;
+	font-size: 14px;
+}
+
+.cat-genero{
+	color: #fff;
+}
+.cat-genero label, .cat-genero input{
+	cursor: pointer;
+}
+.inpt-box input{
+	height: 40px;
+	width: 95%;
+	padding: 0 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+.inpt-box-interes{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	padding-bottom: 15px;
+}
+
+.cat-check label{
+	padding: 0 20px 0 5px;
+	font-size: 14px;
+}
+
+.cat-check{
+	color: gainsboro;
+}
+
+.inpt-box-check-terms label {
+	font-size: 14px;
+	color: #757575;
+}
+
+.button-container{
+	margin: 15px 0;
+	
+}
+.button-container button{
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+	display: block;
+	font-size: 20px;
+	color: #34a0a4;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;	
+	background:  #fff;
+}
+
+.button-container button:hover{
+	color: #00c9bd;
+	background-color: #0b132b;
+	transform: scale(1.1);
+}
+
+.select-provincia .cat-provincia{
+	position: relative;
+	width: 100%;	
+}
+
+.cat-provincia select{
+	appearance: none;
+	border: 1px solid #d5dbd9;
+	width: 100%;
+	height: 100%;
+	padding: 8px 10px;
+	border-radius: 3px;
+	outline: none;
 }
