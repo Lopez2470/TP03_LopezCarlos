@@ -2,40 +2,247 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>TP03</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/css/estilos.css" type="text/css">
 </head>
+
 <body>
 	<header>
-		<h1>Programacion Visual</h1>
+		<div class="interior">
+			<a href="#" class="logo" target="blank"><img
+				src="/images/logo-fi.png" alt="Logo"></a>
+			<nav class="navegacion">
+				<ul>
+					<li><a href="/inicio" >Inicio</a></li>
+					<li><a href="#" target="blank">Acerca de</a></li>
+					<li><a href="/contacto"
+						target="blank">Contacto</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<nav>
-		<ul>
-			<li><a href="#">Enlace 1</a></li>
-			<li><a href="#">Enlace 2</a></li>
-			<li><a href="#">Enlace 3</a></li>
-			<li><a href="#">Enlace 4</a></li>
-		</ul>
-	</nav>
-
 	<main>
-		<section id="inicio">
-			<h2>Seccion Titulo 1</h2>
-			<p>Paarrafo</p>
-			<h3>Titulo 3</h3>
-			<ol>
-				<li>Lista1</li>
-				<li>Lista1</li>
-				<li>Lista1</li>
-			</ol>
+		<section class="inicio">
+			<h2 class="encabezado2">QUE ES JAVA</h2>
+			<p>Es una tecnología que incluye un lenguaje de programación y
+				una plataforma de desarrollo</p>
+			<h3>La plataforma Java</h3>
+			<p>Por definición, una plataforma es el ambiente hardware o
+				software sobre el cual se puede ejecutar un programa.</p>
+			<p>La mayoría de las plataformas actuales se pueden describir
+				como una combinación de un sistema operativo y su hardware
+				subyacente; por ejemplo, un pc con su sistema operativo Windows se
+				denomina comúnmente plataforma Windows, una notebook con una
+				distribución Linux se denomina plataforma Linux y un celular con
+				Android se conoce como plataforma Android.</p>
+			<p>La plataforma Java difiere respecto de las plataformas
+				mencionadas en el párrafo anterior debido a que es una plataforma
+				software que se ejecuta sobre las prestaciones que brinda otra
+				plataforma que gestiona el hardware (denominada plataforma base)</p>
+
+			<img id="imag1" alt="plataforma Java"
+				src="/images/plataformaJava.gif">
+			<p>Esto significa que se puede montar la plataforma Java sobre
+				cualquier plataforma base.</p>
+			<p>El objetivo de la plataforma Java consiste en poder ejecutar
+				sobre la plataforma base los programas realizados con el lenguaje
+				Java.</p>
+			Componentes principales de la plataforma Java:
+
+			<div class="listas">
+
+				<ol>
+					<!-- lista ordenada -->
+					<li>La máquina virtual de Java (Java Virtual Machine, JVM)</li>
+					<li>La Interfaz de Programación de Aplicaciones Java (Java
+						Application Programming Interfaces, Java API)</li>
+				</ol>
+			</div>
+			<p>La JVM es un intérprete. Los intérpretes son programas que
+				permiten traducir el código creado por un programador en un lenguaje
+				de alto nivel a código máquina.</p>
+			<p>Pero, la JVM es particularmente especial. En lugar de traducir
+				código fuente, traduce un tipo de código denominado bytecode al
+				código máquina de la plataforma base al momento de ejecutar la
+				aplicación.</p>
+			<p>El funcionamiento de la JVM y su asociación con el concepto
+				multiplataforma se describirán con mayor profundidad más adelante.</p>
+			<p>La API Java es una gran colección de componentes software que
+				proveen muchas capacidades útiles para el desarrollador. Está
+				agrupada dentro de bibliotecas (libraries) conformadas por clases e
+				interfaces (conceptos que se desarrollarán en detalle más adelante).
+				Estas bibliotecas se conocen con el nombre de paquetes (packages)</p>
 		</section>
 
+		<section class="inicio">
+			<h2 class="encabezado2">El lenguaje de programación Java</h2>
+			<p>Es un lenguaje de programación de alto nivel. Su creador James
+				Gosling lo define en base a sus características: sencillo, orientado
+				a objetos, distribuido, interpretado, robusto, seguro, independiente
+				de las arquitecturas, portable, eficaz, multitarea y dinámico. Antes
+				de poder describir en detalle cada una de estas características es
+				conveniente indicar como funciona el proceso de desarrollo de una
+				aplicación Java.</p>
+			<p>En el lenguaje de programación Java, todo el código fuente se
+				escribe en archivos de texto plano con la extensión .java. Estos
+				archivos fuente son entonces compilados por una herramienta de la
+				plataforma denominada compilador javac guardando el resultado en
+				archivos con el mismo nombre, pero con extensión .class. Un archivo
+				.class no contiene código nativo para el procesador de la plataforma
+				base, sino que contiene un tipo de código denominado bytecode
+				(lenguaje binario intermedio). Los bytecode se pueden considerar el
+				lenguaje máquina de la JVM, debido a que la JVM es la encargada de
+				traducir los bytecode en el código máquina del ordenador.</p>
+
+			<img id="imag1" alt="plataforma Java"
+				src="/images/image2.gif">
+
+			<p>Para realizar esta operación, la plataforma cuenta con una
+				herramienta denominada java launcher, la cual es la encargada de
+				crear una instancia de la JVM y ejecutar la aplicación en esa
+				instancia.</p>
+			<p>El proceso de ejecución de una aplicación java se denomina
+				pseudo interpretado, debido a que existe una primera etapa de
+				compilación a código intermedio (bytecode) y luego una segunda etapa
+				donde se interpreta el código intermedio mediante la JVM.</p>
+			<p>Esta forma de ejecución permite utilizar una misma aplicación
+				(los bytecode) en diferentes sistemas operativos; siempre y cuando
+				ese sistema operativo disponga de la JVM.</p>
+
+			<img id="imag1" alt="plataforma Java"
+				src="/images/image3.png">
+
+			<p>Algunas JVM, tales como Java SE HotSpot (la versión creada por
+				Oracle) incorporan tareas adicionales en tiempo de ejecución que
+				aumentan el rendimiento de la aplicación. Entre estas tareas se
+				incluyen encontrar cuellos de botella en el rendimiento y volver a
+				recompilar (en código nativo) secciones de código frecuente.</p>
+		</section>
+
+		<section class="inicio">
+			<h2 class="encabezado2">Componentes de la Plataforma Java</h2>
+
+			<img id="imag2" alt="plataforma Java"
+				src="/images/image4.jpeg">
+			<p>El esquema precedente representa al lenguaje Java Stándar
+				Editión versión 8 y muestra los diferentes componentes de la
+				plataforma Java.</p>
+
+			<h4>Clasificacion de la funcionalidad de la plataforma</h4>
+			<table>
+				<thead>
+					<tr>
+						<th>Componente</th>
+						<th>Descripcion</th>
+						<th>Funcion</th>
+					</tr>
+
+				</thead>
+				<tbody>
+					<tr>
+						<td>JRE</td>
+						<td>Java Runtime Environment</td>
+						<td>Permite ejecutar aplicaciones Java en el ordenador.<br>
+							Instala:
+							<ul>
+								<li>la JVM</li>
+								<li>la API Java, repartida en:</li>
+
+								<ul class="listas2">
+									<li>API básicas</li>
+									<li>API de acceso a los datos y de integración con lo
+										existente</li>
+									<li>API de gestión de la interfaz de las aplicaciones con
+										el usuario</li>
+								</ul>
+
+								<li>las herramientas de despliegue de aplicaciones
+									necesarias para asegurar que cualquier aplicación Java se pueda
+									ejecutar en la plataforma base</li>
+							</ul> A partir de la versión 8 se incorporan los perfiles compactos,
+							que permiten el uso reducido de memoria para las aplicaciones que
+							no requieren toda la plataforma Java.
+						</td>
+					</tr>
+					<tr>
+						<td>JDK</td>
+						<td>Java Development Kit</td>
+						<td>
+							<ul>
+								<li>Incluye todos los componentes del JRE</li>
+								<li>agrega el lenguaje de programación Java</li>
+								<li>agrega un conjunto de herramientas de ayuda que
+									permiten al desarrollador crear aplicaciones Java.</li>
+							</ul>
+						</td>
+					</tr>
+
+
+				</tbody>
+
+			</table>
+
+		</section>
+		<section class="inicio">
+			<h2 class="encabezado2">Ediciones de la Plataforma Java</h2>
+			<p>La configuración de una plataforma Java afecta
+				fundamentalmente los servicios que esta ofrece, las herramientas
+				adicionales que incorpora y también aspectos menos visibles, tales
+				como el modo de funcionamiento de la JVM. De acuerdo con la
+				documentación actual de Oracle se puede distinguir las siguientes
+				cuatro ediciones de Java:</p>
+			<ul class="listas2">
+				<li><span class="bolded">Java SE</span>: conocida como Standard Edition es la edición más
+					difundida de la plataforma Java. Incorpora el JDK, necesario para
+					crear aplicaciones de escritorio con o sin interfaz gráfica de
+					usuario, acceso al sistema de archivos, comunicación a través de
+					redes, concurrencia y otros servicios básicos.</li>
+				<li><span class="bolded">JavaFX</span>: originalmente JavaFX era una alternativa a Java SE
+					para el desarrollo de proyectos de tipo RIA (Rich Internet
+					Applications), con un núcleo más ligero y fácil de distribuir,
+					capacidad de aceleración 3D aprovechando la GPU, servicios
+					avanzados para producción de gráficos y animaciones, y un mecanismo
+					simplificado para el diseño de interfaces de usuario. JavaFX forma
+					parte de Java SE desde la versión 7 de dicha edición de la
+					plataforma (y se eliminó de la misma a partir de la versión 13)</li>
+				<li><span class="bolded">Java EE</span>: denominada Enterprise Edition de la plataforma
+					Java, es la versión dirigida al desarrollo de soluciones software
+					que se ejecutarán en un servidor de aplicaciones. A las capacidades
+					de Java SE, la edición EE agrega servicios para gestionar la
+					persistencia de objetos en bases de datos, hacer posible la
+					invocación remota de métodos, crear aplicaciones con interfaz de
+					usuario web, etc.</li>
+				<li><span class="bolded">Java ME</span>: Micro Edition, está enfocada a la creación de
+					programas que se ejecutarán en sistemas con recursos limitados,
+					tales como teléfonos móviles, electrodomésticos y dispositivos de
+					domótica o equipos para entornos empotrados como la Rasperry Pi y
+					similares.</li>
+			</ul>
+
+		</section>
+
+		<!-- <aside>
+			<h3>Aside 1</h3>
+			<p>Aside1 aside 1</p>
+			<img alt="descripcion de la imagen" src="#"> <img
+				alt="descripcion de la imagen2" src="#">
+		</aside> -->
 	</main>
-	<aside>
-	<h3>Aside</h3>
-	<p>parrafo</p>
-	</<!-- Comentario -->
-	<img alt="por si no se visualiza" src="../static/img/archivo.png">
-	</aside>
-	<footer></footer>
+	<footer>
+		<img src="/images/logo-fi.png" alt="" class="logo">
+		<ul class="footer-menu-container">
+			<li class="menu-item">Legales</li>
+			<li class="menu-item">Cookies</li>
+			<li class="menu-item">Privacidad</li>
+			<li class="menu-item">Facebook</li>
+			<li class="menu-item">Correo electronico</li>
+		</ul>
+		<span class="copyright">&copy; 2024, CALopez. Todos los
+			derechos reservados.</span>
+	</footer>
+
 </body>
+
 </html>
